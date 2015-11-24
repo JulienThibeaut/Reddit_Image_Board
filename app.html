@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>Reddit Image Board</title>
+  <script src="http://j.mp/jqymin"></script>
+  <script src="js/reddit_api.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:400,900' rel='stylesheet' type='text/css'>
+</head>
+  <body>
+  <header>
+
+    <div class="logo">
+      <img src="Reddit-alien.png" alt="Reddit logo" />
+    </div>
+
+    <div class="title">
+      <p>Reddit <strong>Image Board</strong></p>
+    </div>
+
+    <div class="about">
+      <div class="dropdown">
+        <button>About</button>
+          <ul class="dropdown-menu">
+              <li id="us"><a href="#us">Us</a></li>
+          </ul>
+      </div>
+    </div>
+
+    <select class="size">
+        <option selected="selected">Size</option>
+        <option data-img='imgContentS'>Small</option>
+        <option data-img='imgContent'>Medium</option>
+        <option data-img='imgContentL'>Large</option>
+    </select>
+
+    <select class="sort">
+        <option selected="selected">Sort</option>
+        <option data-url='https://www.reddit.com/r/pics/hot.json?'>Hot</option>
+        <option data-url='https://www.reddit.com/r/pics/new.json?'>New</option>
+        <option data-url='https://www.reddit.com/r/pics/rising.json?'>Rising</option>
+        <option data-url='https://www.reddit.com/r/pics/controversial.json?'>Controversial</option>
+        <option data-url='https://www.reddit.com/r/pics/top.json?'>Top</option>
+    </select>
+
+  </header>
+
+  <div class="content">
+
+  </div>
+
+  </body>
+</html>
